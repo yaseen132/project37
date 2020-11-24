@@ -1,0 +1,63 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <title>VirtualPet</title>
+
+    <meta name='theme-color' content='#94dff8'>
+    <meta name='mobile-web-app-capable' content='yes'>
+
+    <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto'>
+
+    <link rel='icon' type='image/png' sizes='16x16' href='images/egg_happy.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='images/egg_happy_32.png'>
+    <link rel='icon' type='image/png' sizes='96x96' href='images/egg_happy_96.png'>
+    <link rel='icon' type='image/png' sizes='256x256' href='images/egg_happy_256.png'>
+    <link rel='apple-touch-icon' href='/images/egg_happy_256.png'>
+
+    <script src='index.js'></script>
+    <script src='lib/keymaster.js'></script>
+  </head>
+  <body>
+
+    <!-- code to hide next two foods as they are not ready yet -->
+    <style>.food2,.food3{position:fixed;transform:translateY(-1000px);}</style>
+
+    <h1 class='heading'><span class='name'>New Pet</span></h1>
+    <div class='underHeading'><span class='edit'>Edit Name</span><span class='save'>Save Name</span></div>
+    <div class='floor'></div>
+    <div class='petColour'>
+      <div class='colPreview'></div>
+      <div class='colGradient'></div>
+      <input type='range' class='colSlider' min='-360' max='0'>
+      <span class='colSave'>Save Color</span>
+    </div>
+    <div class='controlsLeft'>
+      <div class='foodButtons'>
+        <div class='food1'></div>
+        <div class='food2 hidden'></div>
+        <div class='food3 hidden'></div>
+      </div>
+    </div>
+    <div class='controlsRight'>
+      <div class='exp'>
+        <div class='expBar'></div>
+        <div class='expLabel'>EXP</div>
+        <div class='expLevel'>0</div>
+      </div>
+      <button class='colour'>Pet Colour</button>
+    </div>
+    <div class='belowFloor'></div>
+    <div class='petWrapper'>
+      <div class='loveHeart'></div>
+      <div class='petBack'></div>
+      <div class='pet'></div>
+      <div class='foodFood'></div>
+    </div>
+    <div class='offScreen'></div>
+    <!-- The soon-to-be VirtualPet, by CyberPig and platy11. -->
+  </body>
+</html>
